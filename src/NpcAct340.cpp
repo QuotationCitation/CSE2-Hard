@@ -1987,3 +1987,280 @@ void ActNpc360(NPCHAR *npc)
 
 	npc->rect = rc;
 }
+
+// Extra Hardmode NPCs(?)
+
+//Igor Phase 2 Red Shot
+void ActNpc361(NPCHAR *npc)
+{
+	if (npc->flag & 0xFF)
+	{
+		npc->cond = 0;
+		SetCaret(npc->x, npc->y, 2, 0);
+	}
+
+	npc->y += npc->ym * 2.2;
+	npc->x += npc->xm * 2.2;
+
+	RECT rect_left[3] = {
+		{320, 0, 336, 16},
+		{336, 0, 352, 16},
+		{352, 0, 368, 16},
+	};
+
+	if (++npc->ani_wait > 1)
+	{
+		npc->ani_wait = 0;
+
+		if (++npc->ani_no > 2)
+			npc->ani_no = 0;
+	}
+
+	npc->rect = rect_left[npc->ani_no];
+
+	if (++npc->count1 > 150)
+	{
+		SetCaret(npc->x, npc->y, 2, 0);
+		npc->cond = 0;
+	}
+}
+
+void ActNpc362(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc363(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc364(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc365(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc366(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc367(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc368(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc369(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc370(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc371(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc372(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc373(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc374(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc375(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc376(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc377(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc378(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc379(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc380(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc381(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc382(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc383(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc384(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc385(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc386(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc387(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc388(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc389(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc390(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc391(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc392(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc393(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc394(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc395(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc396(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc397(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc398(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc399(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc400(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}
+
+void ActNpc401(NPCHAR *npc)
+{
+	(void)npc;
+	// TBD
+}

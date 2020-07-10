@@ -1016,6 +1016,7 @@ void ActNpc088(NPCHAR *npc)
 			npc->act_wait = 0;
 			npc->ani_no = 6;
 			// Fallthrough
+		//punching...?
 		case 5:
 			if (++npc->act_wait > 12)
 			{
@@ -1053,6 +1054,9 @@ void ActNpc088(NPCHAR *npc)
 
 				for (i = 0; i < 4; ++i)
 					SetNpChar(4, npc->x + (Random(-12, 12) * 0x200), npc->y + (Random(-12, 12) * 0x200), Random(-341, 341), Random(-0x600, 0), 0, NULL, 0x100);
+
+				for (i = 0; i < 16; ++i)
+				SetNpChar(361, npc->x + (Random(-12, 12) * 0x200), npc->y + (Random(-12, 12) * 0x200), Random(-341, 341), Random(-0x600, 0), 0, NULL, 0x100);
 			}
 
 			break;
